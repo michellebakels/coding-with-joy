@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import PetForm from "./components/petForm";
+import ImageGenerator from "./components/imageGenerator";
+
+export const initialForm = {
+  petName: '',
+  petType: '',
+  loveYou: '',
+  favoriteThing: '',
+  image: ''
+}
 
 function App() {
+  const [showForm, setShowForm] = useState(true);
+  const [petForm, setPetForm] = useState(initialForm)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      {showForm ?
+          <PetForm setShowForm={setShowForm} setPetForm={setPetForm} petForm={petForm}/>
+          :
+          <ImageGenerator setShowForm={setShowForm} petForm={petForm} setPetForm={setPetForm}/>
+      }
     </div>
   );
 }
