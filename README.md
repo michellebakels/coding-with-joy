@@ -1,3 +1,11 @@
+# Coding With...
+Coding With... is a collection of emotional expressions through tiny software programs. As a contribution to the 10 for 10 challenge created by the [South Florida Entrepreneur Club](https://www.sfle.club/), the aim is to meditate on a new theme daily as small, personal tributes are created for each through code. 
+
+## Day Two Article: 
+[Coding With Joy](https://gist.github.com/michellebakels/139e7e2b8f2825745f920bfaab215ded)
+
+---------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
